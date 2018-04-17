@@ -21,7 +21,10 @@ namespace Interfaz
 
         public void ExtraerDatosIMN()
         {
-            cr.ac.imn.www.pronosticoCiudad conectar = new cr.ac.imn.www.pronosticoCiudad();
+            cr.ac.imn.www.WSMeteorologicoService conectar = new cr.ac.imn.www.WSMeteorologicoService();
+           // MessageBox.Show(  ""  + conectar.pronosticoRegionalxID(5)); 
+
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -31,6 +34,21 @@ namespace Interfaz
 
         private void Principal_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnSanjose_Click(object sender, EventArgs e)
+        {
+
+            cr.ac.imn.www.WSMeteorologicoService conectar = new cr.ac.imn.www.WSMeteorologicoService();
+            MessageBox.Show("" + conectar.pronosticoPorCiudadxID(1));
+
+        }
+
+        private void btnAlajuela_Click(object sender, EventArgs e)
+        {
+            cr.ac.imn.www.WSMeteorologicoService conectar = new cr.ac.imn.www.WSMeteorologicoService();
+            MessageBox.Show("" + conectar.pronosticoPorCiudadxID(2));
 
         }
     }

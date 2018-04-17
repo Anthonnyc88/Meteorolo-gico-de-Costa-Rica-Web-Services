@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnSanjose = new System.Windows.Forms.Button();
+            this.btnAlajuela = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,11 +55,33 @@
             this.button1.Text = "Ver Pronostico";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // btnSanjose
+            // 
+            this.btnSanjose.Location = new System.Drawing.Point(328, 118);
+            this.btnSanjose.Name = "btnSanjose";
+            this.btnSanjose.Size = new System.Drawing.Size(75, 23);
+            this.btnSanjose.TabIndex = 2;
+            this.btnSanjose.Text = "San Jose";
+            this.btnSanjose.UseVisualStyleBackColor = true;
+            this.btnSanjose.Click += new System.EventHandler(this.btnSanjose_Click);
+            // 
+            // btnAlajuela
+            // 
+            this.btnAlajuela.Location = new System.Drawing.Point(423, 117);
+            this.btnAlajuela.Name = "btnAlajuela";
+            this.btnAlajuela.Size = new System.Drawing.Size(75, 23);
+            this.btnAlajuela.TabIndex = 3;
+            this.btnAlajuela.Text = "Alajuela";
+            this.btnAlajuela.UseVisualStyleBackColor = true;
+            this.btnAlajuela.Click += new System.EventHandler(this.btnAlajuela_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 508);
+            this.Controls.Add(this.btnAlajuela);
+            this.Controls.Add(this.btnSanjose);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -73,6 +97,8 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSanjose;
+        private System.Windows.Forms.Button btnAlajuela;
     }
 }
 
