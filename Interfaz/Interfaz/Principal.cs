@@ -40,9 +40,8 @@ namespace Interfaz
 
         private void btnSanjose_Click(object sender, EventArgs e)
         {
-
-            cr.ac.imn.www.WSMeteorologicoService conectar = new cr.ac.imn.www.WSMeteorologicoService();
-            MessageBox.Show("" + conectar.pronosticoPorCiudadxID(1));
+           cr.ac.imn.www.WSMeteorologicoService conectar = new cr.ac.imn.www.WSMeteorologicoService();
+           MessageBox.Show("" + conectar.pronosticoPorCiudadxID(1));
 
         }
 
