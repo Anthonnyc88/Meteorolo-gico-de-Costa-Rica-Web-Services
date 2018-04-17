@@ -140,6 +140,7 @@
             this.Controls.Add(this.btnSanjose);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "IMN";
             this.Text = "IMN";
             this.Load += new System.EventHandler(this.Principal_Load);
