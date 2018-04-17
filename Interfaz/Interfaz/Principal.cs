@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace Interfaz
 {
-    public partial class Principal : Form
+    public partial class IMN : Form
     {
-        public Principal()
+        public IMN()
         {
             InitializeComponent();
             ExtraerDatosIMN();
+            this.CenterToScreen();
         }
 
 
@@ -50,6 +51,11 @@ namespace Interfaz
             cr.ac.imn.www.WSMeteorologicoService conectar = new cr.ac.imn.www.WSMeteorologicoService();
             MessageBox.Show("" + conectar.pronosticoPorCiudadxID(2));
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
