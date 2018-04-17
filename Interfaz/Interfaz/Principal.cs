@@ -15,9 +15,21 @@ namespace Interfaz
         public Principal()
         {
             InitializeComponent();
+            ExtraerDatosIMN();
+        }
+
+
+        public void ExtraerDatosIMN()
+        {
+            cr.ac.imn.www.pronosticoCiudad conectar = new cr.ac.imn.www.pronosticoCiudad();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
         {
 
         }

@@ -22,5 +22,15 @@ namespace Interfaz.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://www.imn.ac.cr:443/PORTAL_IMN_WS/WSMeteorologicoSoap")]
+        public string Interfaz_cr_ac_imn_www_WSMeteorologicoService {
+            get {
+                return ((string)(this["Interfaz_cr_ac_imn_www_WSMeteorologicoService"]));
+            }
+        }
     }
 }
