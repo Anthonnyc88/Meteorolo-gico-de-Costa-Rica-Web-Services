@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Interfaz.Properties {
+namespace CapaDatos.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -20,6 +20,16 @@ namespace Interfaz.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://www.imn.ac.cr:443/PORTAL_IMN_WS/WSMeteorologicoSoap")]
+        public string CapaDatos_cr_ac_imn_www_WSMeteorologicoService {
+            get {
+                return ((string)(this["CapaDatos_cr_ac_imn_www_WSMeteorologicoService"]));
             }
         }
     }
