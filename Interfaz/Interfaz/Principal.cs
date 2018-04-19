@@ -12,6 +12,7 @@ namespace Interfaz
 {
     public partial class IMN : Form
     {
+        DataSet ds = new DataSet();
         public IMN()
         {
             InitializeComponent();
@@ -41,7 +42,8 @@ namespace Interfaz
         private void btnSanjose_Click(object sender, EventArgs e)
         {
            cr.ac.imn.www.WSMeteorologicoService conectar = new cr.ac.imn.www.WSMeteorologicoService();
-           MessageBox.Show("" + conectar.pronosticoPorCiudadxID(1));
+            //ds = conectar.pronosticoPorCiudadxID();
+           MessageBox.Show("Pronostico " + conectar.pronosticoPorCiudadxID(1));
 
         }
 
@@ -55,6 +57,33 @@ namespace Interfaz
         private void button7_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            cr.ac.imn.www.WSMeteorologicoService conectar = new cr.ac.imn.www.WSMeteorologicoService();
+            //ds = conectar.pronosticoPorCiudadxID();
+            MessageBox.Show("Pronostico " + conectar.pronosticoPorCiudadxID(3));
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+        
         }
     }
 }
